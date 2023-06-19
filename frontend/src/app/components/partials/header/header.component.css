@@ -10,12 +10,10 @@ a{
 }
 
 a:hover{
-  background: #e72929;
+  background:#e72929;
   color: white;
   cursor: pointer;
-
 }
-
 
 .container{
   margin: 0 auto;
@@ -44,8 +42,7 @@ a span{
   color: white;
   padding: 0.1rem 0.45rem;
   border-radius: 100rem;
-  font-size: 0.9rem;
-
+  font-size:0.9rem;
 }
 
 .menu-container{
@@ -53,17 +50,17 @@ a span{
 }
 
 .menu{
-  position: absolute;
-  z-index: 1;
-  background: whitesmoke;
+  position:absolute;
+  z-index:1;
+  background:whitesmoke;
   display: none;
-
 }
 
-.menu-container:hover.menu{
+.menu-container:hover .menu{
   display: block;
 }
+
 .menu a{
   width: 100%;
-  min-width: 8rem;
+  min-width:8rem;
 }

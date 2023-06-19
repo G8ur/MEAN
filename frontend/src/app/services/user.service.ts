@@ -38,6 +38,13 @@ export class UserService {
     );
   } //IUserLogin is an interface we cannot create a new instance from interface
 
+
+  logout(){
+    this.userSubject.next(new User());
+    localStorage.removeItem(USER_KEY);
+    window.location.reload();
+  }
+
   private setUserToLocalStorage(user: User) {
     localStorage.setItem(USER_KEY, JSON.stringify(user));
   }
