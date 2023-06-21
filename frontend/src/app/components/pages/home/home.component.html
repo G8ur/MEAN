@@ -1,5 +1,5 @@
 <app-search></app-search>
-<app-tags></app-tags>
+<!--<app-tags></app-tags>-->
 <app-not-found
 [visible]="!foods || !foods.length"
 resetLinkText="Reset Search">
@@ -15,7 +15,7 @@ resetLinkText="Reset Search">
         <span class="favorite {{food.favorite?'':'not'}}">
           ❤
         </span>
-      
+
         <div class="product-item-footer">
           <div class="origins">
             <span *ngFor="let origin of food.origins">
