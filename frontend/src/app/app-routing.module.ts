@@ -7,8 +7,9 @@ import { CartPageComponent } from './componets/pages/cart-page/cart-page.compone
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
-import { AuthGuard } from './auth/auth.guard';
+
 import { PaymentPageComponent } from './components/pages/payment-page/payment-page.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},

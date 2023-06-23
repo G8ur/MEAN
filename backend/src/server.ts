@@ -5,6 +5,7 @@ import foodRouter from "./routers/food.router";
 import userRouter from "./routers/user.router";
 import { dbConnect } from "./configs/database.config";
 import cors from "cors";
+import orderRouter from "./routers/order.router"
 dotenv.config()
 
 dbConnect();
@@ -25,6 +26,7 @@ app.use(
 app.use("/api/foods", foodRouter); // just the the router path and the foodRouter function sol will import all the router from router
 
 app.use("/api/users", userRouter);
+app.use("/api/orders", orderRouter);
 
 const port = 5000;
 
