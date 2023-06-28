@@ -19,7 +19,7 @@ export const sample_foods: Food[]= [
   {
     id: '2',
     name:'Nike AirJordan',
-    price: 40,
+    price: 40, 
     // cookTime
     favorite:false,
     origins:['pennsylvinia','usa'],
